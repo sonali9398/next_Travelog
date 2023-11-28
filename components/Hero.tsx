@@ -17,10 +17,9 @@ const Hero = () => {
           className='absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]'
           />
         <div className=' bold-52 lg:bold-88 font-bold my-8'>
-          <h1 className='text-[#000000]'>Travel</h1><span className='text-[#F85E9F]'>top destination </span>
-          <h1 className='text-[#000000]'> of the world</h1>
+          <h1 id="text" className='text-[#000000]'>Travel</h1><span className='text-[#F85E9F]'>top destination </span>
+          <h1 id="text" className='text-[#000000]'> of the world</h1>
         </div>
-        
         
         <p className='text-[#191825]
         xl:max-w-[520px] font-inter font-normal text-lg'>We always make our customer happy by providing
