@@ -4,25 +4,24 @@ import Button from './Button'
 
 const Hero = () => {
   return (
-    <section className='max-container padding-container
-    flex flex-col gap-20 pb-32 md:gap-28 lg:py-20 xl:flex-row   '>
-
+    <section className='max-container padding-container  gap-20 py-10 pb-32 flex 
+   flex-col space-y-reverse md:gap-28 lg:py-20 xl:flex-row   '>
+    <div className='hero-map'/>
       {/* left */}
-      <div className='relative z-20 flex flex-col xl:w-1/2 '>
+      <div className='relative z-20 flex flex-col xl:w-1/2 space-y-5  '>
         <Image
           src='/explore.png'
           alt='camp'
-          width={225}
-          height={56}
-          className='absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]'
+          width={325}
+          height={80}
+          className='motion-safe:animate-pulse'
           />
-        <div className=' bold-52 lg:bold-88 font-bold my-8'>
+        <div className='absolute bold-52 lg:bold-88  font-extrabold'>
           <h1 id="text" className='text-[#000000]'>Travel</h1><span className='text-[#F85E9F]'>top destination </span>
           <h1 id="text" className='text-[#000000]'> of the world</h1>
         </div>
         
-        <p className='text-[#191825]
-        xl:max-w-[520px] font-inter font-normal text-lg'>We always make our customer happy by providing
+        <p className='text-[#191825] xl:max-w-[520px] font-inter font-normal text-lg'>We always make our customer happy by providing
         as many choices as possible </p>
 
         <div className='flex flex-col w-full gap-3 sm:flex-row my-10'>
@@ -49,9 +48,9 @@ const Hero = () => {
               <Image 
                 src='/layerWorld.png'
                 alt='world'
-                width={800}
-                height={400}
-                className='top-17 left-46'
+                width={900}
+                height={500}
+                className='top-17 left-46 motion-safe:animate-pulse'
                 />
             </div>
             <div className='flexBetween'>  
@@ -64,8 +63,8 @@ const Hero = () => {
             </div>
             
           </div>
-          <div className='relative  '>
-            <div className='absolute  flex space-between content-start top-341'>
+          <div className='relative'>
+            <div className='absolute  flex space-between content-start regular-16 animate-bounce'>
                 
                   <Image
                   src='/share.png'

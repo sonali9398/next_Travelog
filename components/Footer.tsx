@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '@/constants'
 const Footer = () => {
   return (
-    <footer className='flexCenter mb-24 w-100% '>
-      <div className='padding-container max-container flex w-full flex-col gap-14'>
-        <div className='flex flex-wrap items-start justify-center gap-[10%]
+    <footer className='flexBetween mb-24  '>
+      <div className=' padding-container max-container flex w-full flex-col gap-14'>
+        <div className='flex flex-col items-start justify-center gap-[10%]
         md:flex-row '>
           <div>
             <Link href='/' className="mb-10">
@@ -17,7 +17,7 @@ const Footer = () => {
                 width={74}
               />
             </Link>
-            <div className='flex flex-wrap gap-10'>
+            <div className='flex flex-wrap gap-10 '>
               <FooterColumn  title={SOCIALS.title}>
                 <ul className='regular-18 flex gap-4 text-lg '>
                   <p className='medium-14 whitespace-nowrap text-lg
@@ -59,7 +59,7 @@ const Footer = () => {
             <div className='flex flex-col gap-5'>
               <FooterColumn title ={FOOTER_CONTACT_INFO.title}>
                 {FOOTER_CONTACT_INFO.links.map((link) =>(
-                  <Link href="/"  
+                  <Link href="/" 
                   className='flex gap-4 md:flex-col lg:flex-row'>
                     
                     <p className='medium-14 whitespace-nowrap 

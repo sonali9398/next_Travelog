@@ -36,13 +36,13 @@ const Campsite = ({ title, subtitle} : CampProps) =>{
 const Services = () => {
   return (
     <section className='relative
-     2xl:max-container shrink-2 w-60% 
+     2xl:max-container  w-60% 
      flex  space-y-4  lg:mb-10 lg:py-20 xl:mb-20'>
-      <div className=' hide-scrollbar flex h-[340px] w-10% items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]'>
+      <div className=' hide-scrollbar flex h-[340px] w-50% space-x-20 items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]'>
         {/* left */}
         <div className='flex flex-col leading-loose justify-center'>
-          <h4 className='text-[#F85E9F] font-bold text-xl uppercase text-normal'>Services</h4>
-          <h1 className='text-[#191825] font-bold text-4xl'>Our top value categories for you</h1>
+          <h4 className='text-[#F85E9F] font-bold text-2xl uppercase text-normal'>Services</h4>
+          <h1 className='text-[#191825] font-semibold text-6xl'>Our top value categories for you</h1>
         </div>
         
         {/* right */}

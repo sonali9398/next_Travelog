@@ -5,7 +5,7 @@ import Button from './Button'
 const Mail = () => {
   return (
     <>
-      <section className=' w-full  pb-[100px] ml-20'>
+      <section className='flex flex-col space-y-10 w-full  pb-[100px] ml-20'>
         <Image
           src='/left.png'
           alt='left'
@@ -14,10 +14,11 @@ const Mail = () => {
           className='flexStart left-[20%] animate-bounce'
         />
         <div className='z-20 flex-1 flexCenter flex-col flex-wrap leading-loose'>
-          <h3 className='text-base font-bold text-[#F85E9F] uppercase grow'>subscribe to our newsletter</h3>
+          <h3 className='text-lg font-bold text-[#F85E9F] uppercase grow'>subscribe to our newsletter</h3>
           <h1 className='text-6xl fond-extrabold text-[#191825] '>Prepare yourself & let’s explore the<br/> beauty of the world</h1>
         </div>
         <div className='flex flex-wrap justify-around xl:flex-row leading-loose'>
+        
             <Button
               type='button'
               title="Your Email"
@@ -27,7 +28,8 @@ const Mail = () => {
           <Button
               type="button"
               title="Sunscribe"
-              variant="btn_purple"/>
+              variant="btn_purple"              
+              />
         </div>
 
       </section>
@@ -37,7 +39,7 @@ const Mail = () => {
           alt='right'
           height={125}
           width={125}
-          className='flexEnd animate-bounce'
+          className='flexEnd motion-safe:animate-ping'
         />
       </div>
     </>

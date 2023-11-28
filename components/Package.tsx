@@ -12,30 +12,36 @@ const Package = () => {
             alt='girl'
             height={789}
             width={697}
-            className='absolute top-[13%] z-10 hidden md:-left-16 lg:flex  3xl:left-20;'
+            className='feature-phone'
           />
           
         </div>
-        <Image
-            src='/discPrice.png'
-            alt='disc'
-            height={672}
-            width={900}
-            className="absolute left-[5px] bottom-[88px] w-10 lg:w-[500px]"
-          />
+        <div  className="z-20 flex w-full flex-col lg:w-[60%]">
+          <div className='relative'>
+            <Image
+                src='/discPrice.png'
+                alt='disc'
+                height={672}
+                width={900}
+                className="absolute left-[5px] bottom-[88px] w-10 lg:w-[500px] animate-bounce"
+              />
+          </div>
+          
+        </div>
+        
 
-        <div className='flex flex-col flex-wrap '>
-          <h4 className='text-[#F85E9F] font-bold text-xl uppercase'>Travel Point</h4>
-          <h1 className='text-[#191825] font-bold text-4xl'>We helping you find your dream location</h1>
+        <div className='flex flex-col flex-wrap space-y-2'>
+          <h4 className='text-[#F85E9F] font-bold text-2xl uppercase'>Travel Point</h4>
+          <h1 className='text-[#191825] font-semibold text-5xl'>We helping you find your dream location</h1>
           <p className='text-[#191825] font-normal text-sm'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
           <Image
             src='/yellow.png'
             alt='yel'
             height={112}
             width={112}
-            className="absolute right-[-5px] top-[28px] w-10 lg:w-[110px]"
+            className="absolute right-[-5px] top-[28px] w-10 lg:w-[110px] motion-safe:animate-bounce "
           />
-          <ul className='mt-10 grid gap-8 md:grid-cols-2 lg:mt-20 lg:gap-15 motion-safe:animate-bounce'>
+          <ul className='mt-10 grid gap-8 md:grid-cols-2 lg:mt-20 lg:gap-15 animate-pulse'>
               {FEATURES.map((feature) =>(
                 <FeatureItem 
                 key={feature.title}  
