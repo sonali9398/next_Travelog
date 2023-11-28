@@ -18,7 +18,7 @@ const Footer = () => {
               />
             </Link>
             <div className='flex flex-wrap gap-10'>
-              <FooterColumn >
+              <FooterColumn  title={SOCIALS.title}>
                 <ul className='regular-18 flex gap-4 text-lg '>
                   <p className='medium-14 whitespace-nowrap text-lg
                     text-blue-70'>

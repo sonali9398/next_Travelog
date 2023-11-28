@@ -57,7 +57,7 @@ export const FOOTER_CONTACT_INFO = {
 };
 
 export const SOCIALS = {
-  
+  title:'',
   links: [
     '/fb.png',
     '/insta.png',
